@@ -1,0 +1,48 @@
+0:牆壁 1:路 9:起點 8:終點 2:傳送門
+
+global map;地圖的矩陣
+
+global x;人物所在X座標
+
+global y;人物所在Y座標
+
+global walk_counter;計算總共走了幾步
+
+global door1_x;一個傳送門的X座標
+
+global door1_y;一個傳送門的Y座標
+
+global door2_x;另一個傳送門的X座標
+
+global door2_y;另一個傳送門的Y座標
+
+global use_door;初始為false,人物走到任一個傳送門座標變成true
+
+global start_x;記錄地圖上的起點X座標
+
+global start_y;記錄地圖上起點Y座標
+
+global goal_x;記錄地圖上的終點X座標
+
+global goal_y;記錄地圖上的起點Y座標
+
+global shortest_way_no_door;記錄不經過傳送門的最少步數(初始為-400)
+
+global shortest_way_no_door_map;記錄不經過傳送門最短路徑走到終點的地圖
+(沿路將走到每格的最短步數記錄在這)
+global shortest_way_door;記錄經過傳送門的最少步數(初始為-400)
+
+global shortest_way_door_map;記錄經過傳送門最短路徑走到終點的地圖
+(沿路將走到每格的最短步數記錄在這)
+
+global clear_door_map_x;記錄走傳送門的最短路線地圖x軸,要畫其他路線時用來清除
+
+global clear_door_map_y;記錄走傳送門的最短路線地圖y軸,要畫其他路線時用來清除
+
+global clear_door_counter;記錄走傳送門的最短路線步數,要畫其他路線時用來清除
+
+global clear_no_door_map_x;記錄不走傳送門的最短路線地圖x軸,要畫其他路線時用來清除
+
+global clear_no_door_map_y;記錄不走傳送門的最短路線地圖y軸,要畫其他路線時用來清除
+
+global clear_no_door_counter;記錄不走傳送門的最短路線步數,要畫其他路線時用來清除
